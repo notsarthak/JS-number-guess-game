@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Guess What!</title>
+	</head>
+	<body>
+		<h1>Guess What!</h1>
+		<p>Enter a number between 1 & 10 and Check if the Computer picked the same number!</p> 
+		<form>
+			<input type="text" placeholder="Enter number">
+			<button id="check">Check!</button>
+		</form>
+		<div id="message"><div>
+		
+		<script id="lost" type="text/html">
+				<div>
+					<button id="la">Play again!</button>
+					<p style="color:red">Sorry you lost! The correct number was: {{av}}</p>
+				</div>
+		</script>
+		<script id="wrong" type="text/html">
+			<div>
+				<p style="color:red">This is a wrong answer, you now have {{attempt}} attempts remaining!</p>
+			</div>
+		</script>
+		<script id="correct" type="text/html">
+			<div>
+				<p style="color:green">Congrats it's correct!</p>
+				<button id="wa">Play again!</button>
+			</div>
+		</script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+		<script src="sp.js"></script>
+	</body>
+</html>
